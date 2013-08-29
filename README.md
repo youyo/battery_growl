@@ -1,6 +1,6 @@
 # BatteryGrowl
 
-TODO: Write a gem description
+When the MacBookAir's battery is running low, notify the growl.
 
 ## Installation
 
@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+``
+battery_growl [num]
+``
 
 ## Contributing
 

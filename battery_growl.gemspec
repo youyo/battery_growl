@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = BatteryGrowl::VERSION
   spec.authors       = ["youyo"]
   spec.email         = ["1003ni2@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{When the MacBookAir's battery is running low, notify the growl.}
+  spec.summary       = %q{When the MacBookAir's battery is running low, notify the growl.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -22,5 +22,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
   spec.add_dependency "ruby-growl"
-  spec.add_dependency "commander"
 end
