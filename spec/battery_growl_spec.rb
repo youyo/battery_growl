@@ -66,6 +66,34 @@ describe BatteryGrowl do
 
   context 'private method' do
 
+    describe '#num_check' do
+
+      before(:each) do
+        @battery_growl = BatteryGrowl.new
+      end
+
+      context 'when the number is less than 1, ' do
+        it 'raise RuntimeError' do
+          expect{ @battery_growl.send(:num_check, 0) }.to raise_error(RuntimeError,'Parameter is less than 1.')
+        end
+
+      end
+
+      context 'when the number is greater than 100, ' do
+        it 'raise RuntimeError' do
+          expect{ @battery_growl.send(:num_check, 101) }.to raise_error(RuntimeError,'Parameter is greater than 100.')
+        end
+      end
+
+      context 'when the number is between 1 and 100, ' do
+        it 'return true' do
+          expect( @battery_growl.send(:num_check, 1) ).to be(true)
+          expect( @battery_growl.send(:num_check, 100) ).to be(true)
+        end
+      end
+
+    end
+
     describe '#check_battery' do
 
       before(:each) do
