@@ -18,9 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-``
-battery_growl [num]
-``
+    $ battery_growl [num]
 
 ## Contributing
 
